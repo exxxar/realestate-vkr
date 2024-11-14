@@ -41,7 +41,7 @@ class SliderController extends Controller
 
             if(!Storage::disk('public')->exists('slider')){
                 Storage::disk('public')->makeDirectory('slider');
-            }s
+            }
             $slider = Image::make($image)->resize(1600, 480)->save();
             Storage::disk('public')->put('slider/'.$imagename, $slider);
         }else{
