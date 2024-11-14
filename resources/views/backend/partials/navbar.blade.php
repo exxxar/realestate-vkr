@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="{{ route('admin.dashboard') }}">Real Estate</a>
+                <a class="navbar-brand" href="{{ route('admin.dashboard') }}">АН "Донбасс"</a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -43,7 +43,7 @@
                                 </ul>
                             </li>
                             <li class="footer">
-                                <a href="{{ route('admin.message') }}">View All Messages</a>
+                                <a href="{{ route('admin.message') }}">Показать все сообщения</a>
                             </li>
                         </ul>
                     </li>
@@ -57,18 +57,18 @@
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
-                                <a href="{{route('admin.profile')}}"><i class="material-icons">person</i>Profile</a>
+                                <a href="{{route('admin.profile')}}"><i class="material-icons">person</i>Профиль</a>
                             </li>
 
                             <li role="seperator" class="divider"></li>
                             <li>
-                                <a href="{{ route('admin.message') }}"><i class="material-icons">message</i>Messages</a>
+                                <a href="{{ route('admin.message') }}"><i class="material-icons">message</i>Сообщения</a>
                             </li>
                             <li>
-                                <a href="{{ route('admin.changepassword') }}"><i class="material-icons">lock</i>Password</a>
+                                <a href="{{ route('admin.changepassword') }}"><i class="material-icons">lock</i>Пароль</a>
                             </li>
                             <li>
-                                <a href="{{ route('home') }}" target="_blank"><i class="material-icons">home</i>Visit Site</a>
+                                <a href="{{ route('home') }}" target="_blank"><i class="material-icons">home</i>Посетить сайт</a>
                             </li>
                             <li role="seperator" class="divider"></li>
 

@@ -10,7 +10,7 @@
 @section('content')
 
     <div class="block-header">
-        <h2>DASHBOARD</h2>
+        <h2>Административная панель</h2>
     </div>
 
     <!-- Widgets -->

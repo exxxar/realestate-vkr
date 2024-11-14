@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Please wait...</p>
+                <p>Пожалуйста подождите...</p>
             </div>
         </div>
 
