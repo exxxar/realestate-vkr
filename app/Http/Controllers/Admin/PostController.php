@@ -9,12 +9,11 @@ use App\Comment;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 use Carbon\Carbon;
 use Toastr;
-
+use Auth;
 
 class PostController extends Controller
 {
@@ -55,8 +54,8 @@ class PostController extends Controller
             if(!Storage::disk('public')->exists('posts')){
                 Storage::disk('public')->makeDirectory('posts');
             }
-
-            Storage::disk('public')->put('posts/'.$imagename,$image);
+            $postimage = Image::make($image)->resize(1600, 980)->save();
+            Storage::disk('public')->put('posts/'.$imagename, $postimage);
 
         }else{
             $imagename = 'default.png';
@@ -128,7 +127,8 @@ class PostController extends Controller
             if(Storage::disk('public')->exists('posts/'.$post->image)){
                 Storage::disk('public')->delete('posts/'.$post->image);
             }
-            Storage::disk('public')->put('posts/'.$imagename,$image);
+            $postimage = Image::make($image)->resize(1600, 980)->save();
+            Storage::disk('public')->put('posts/'.$imagename, $postimage);
 
         }else{
             $imagename = $post->image;

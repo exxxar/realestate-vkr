@@ -67,7 +67,6 @@ class PropertyController extends Controller
             $propertyimage = Image::make($image)->stream();
             Storage::disk('public')->put('property/'.$imagename, $propertyimage);
 
-
         }
 
         $floor_plan = $request->file('floor_plan');
@@ -80,7 +79,6 @@ class PropertyController extends Controller
             }
             $propertyfloorplan = Image::make($floor_plan)->stream();
             Storage::disk('public')->put('property/'.$imagefloorplan, $propertyfloorplan);
-
 
         }else{
             $imagefloorplan = 'default.png';
