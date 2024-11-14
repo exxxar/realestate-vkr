@@ -43,7 +43,7 @@ class SliderController extends Controller
                 Storage::disk('public')->makeDirectory('slider');
             }
           //  $slider = Image::make($image)->resize(1600, 480)->save();
-            Storage::disk('public')->put('slider/'.$imagename,$image);
+            $image->storeAs(public_path("storage")."slider/",$imagename );
         }else{
             $imagename = 'default.png';
         }
@@ -87,7 +87,9 @@ class SliderController extends Controller
             if(Storage::disk('public')->exists('slider/'.$slider->image)){
                 Storage::disk('public')->delete('slider/'.$slider->image);
             }
-            Storage::disk('public')->put('slider/'.$imagename,$image);
+
+            $image->storeAs(public_path("storage")."slider/",$imagename );
+            //Storage::disk('public')->put('slider/',$image);
         }else{
             $imagename = $slider->image;
         }
