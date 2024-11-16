@@ -62,26 +62,26 @@
                                 </div>
                                 <div class="address">
                                     <i class="small material-icons left">check_box</i>
-                                    <span>{{ ucfirst($property->type) }} for {{ $property->purpose }}</span>
+                                    <span>{{ ucfirst($property->type) }} для {{ $property->purpose }}</span>
                                 </div>
 
                                 <h5>
-                                    &dollar;{{ $property->price }}
+                                    {{ $property->price }} руб.
                                     <div class="right" id="propertyrating-{{$property->id}}"></div>
                                 </h5>
                             </div>
                             <div class="card-action property-action">
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Bedroom: <strong>{{ $property->bedroom}}</strong> 
+                                    Спален: <strong>{{ $property->bedroom}}</strong>
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Bathroom: <strong>{{ $property->bathroom}}</strong> 
+                                    Ванных: <strong>{{ $property->bathroom}}</strong>
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">check_box</i>
-                                    Area: <strong>{{ $property->area}}</strong> Square Feet
+                                    Площадь: <strong>{{ $property->area}}</strong>М2
                                 </span>
                                 <span class="btn-flat">
                                     <i class="material-icons">comment</i> 

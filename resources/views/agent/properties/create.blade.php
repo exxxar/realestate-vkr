@@ -50,7 +50,7 @@
                                 <div class="input-field col s6">
                                     <i class="material-icons prefix">event_seat</i>
                                     <input id="bathroom" name="bathroom" type="number" class="validate">
-                                    <label for="bathroom">Bathroom</label>
+                                    <label for="bathroom">Ванная</label>
                                 </div>
                             </div>
                             <div class="row">
