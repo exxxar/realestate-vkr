@@ -21,74 +21,74 @@
         <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>Edit PROPERTY</h2>
+                    <h2>Редактор</h2>
                 </div>
                 <div class="body">
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" name="title" class="form-control" value="{{$property->title}}">
-                            <label class="form-label">Property Title</label>
+                            <label class="form-label">Название</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" name="price" class="form-control" value="{{$property->price}}" required>
-                            <label class="form-label">Price</label>
+                            <label class="form-label">Цена</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="bedroom" value="{{$property->bedroom}}" required>
-                            <label class="form-label">Bedroom</label>
+                            <label class="form-label">Спален</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="bathroom" value="{{$property->bathroom}}" required>
-                            <label class="form-label">Bathroom</label>
+                            <label class="form-label">Ванных</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" class="form-control" name="city" value="{{$property->city}}" required>
-                            <label class="form-label">City</label>
+                            <label class="form-label">Город</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" class="form-control" name="address" value="{{$property->address}}" required>
-                            <label class="form-label">Address</label>
+                            <label class="form-label">Адрес</label>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="number" class="form-control" name="area" value="{{$property->area}}" required>
-                            <label class="form-label">Area</label>
+                            <label class="form-label">Площадь</label>
                         </div>
-                        <div class="help-info">Square Feet</div>
+                        <div class="help-info">Метров квадратных</div>
                     </div>
 
                     <div class="form-group">
                         <input type="checkbox" id="featured" name="featured" class="filled-in" value="1" {{ $property->featured ? 'checked' : '' }}/>
-                        <label for="featured">Featured</label>
+                        <label for="featured">Особенности</label>
                     </div>
 
                     <hr>
                     <div class="form-group">
-                        <label for="tinymce">Description</label>
+                        <label for="tinymce">Описание</label>
                         <textarea name="description" id="tinymce">{{$property->description}}</textarea>
                     </div>
 
                     <hr>
                     <div class="form-group">
-                        <label for="tinymce-nearby">Nearby</label>
+                        <label for="tinymce-nearby">Поблизости</label>
                         <textarea name="nearby" id="tinymce-nearby">{{$property->nearby}}</textarea>
                     </div>
 
