@@ -15,7 +15,7 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('E-Mail адрес') }}</label>
                                 <input id="email" type="email" class="{{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" value="{{ $email ?? old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
@@ -28,7 +28,7 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <label for="password">{{ __('Password') }}</label>
+                                <label for="password">{{ __('Пароль') }}</label>
                                 <input id="password" type="password" class="{{ $errors->has('password') ? 'is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))
@@ -41,7 +41,7 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                <label for="password-confirm">{{ __('Подтвердить пароль') }}</label>
                                 <input id="password-confirm" type="password" name="password_confirmation" required>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <button type="submit" class="waves-effect waves-light btn indigo">
-                                    {{ __('Reset Password') }}
+                                    {{ __('Сбросить пароль') }}
                                 </button>
                             </div>
                         </div>

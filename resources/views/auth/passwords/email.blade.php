@@ -19,7 +19,7 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <label for="email">{{ __('E-Mail Address') }}</label>
+                                <label for="email">{{ __('E-Mail адрес') }}</label>
                                 <input id="email" type="email" class="{{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                                 <button type="submit" class="waves-effect waves-light btn indigo">
-                                    {{ __('Send Password Reset Link') }}
+                                    {{ __('Отправить ссылку сброса пароля') }}
                                 </button>
                             </div>
                         </div>
