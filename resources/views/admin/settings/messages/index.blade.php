@@ -16,7 +16,7 @@
         <div class="col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>MESSAGES</h2>
+                    <h2>Сообщения</h2>
                 </div>
                 <div class="body">
 

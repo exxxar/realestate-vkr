@@ -17,7 +17,7 @@
 
                 <div class="col s12 m9">
 
-                    <h4 class="agent-title">MESSAGES</h4>
+                    <h4 class="agent-title">Сообщения</h4>
                     
                     <div class="agent-content">
                         <table class="striped responsive-table">
