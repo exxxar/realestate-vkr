@@ -31,13 +31,13 @@
                         <div class="form-group form-float">
                             <div class="form-line">
                                 <input type="text" name="name" class="form-control" value="{{$feature->name}}">
-                                <label class="form-label">Feature</label>
+                                <label class="form-label">Особенность</label>
                             </div>
                         </div>
 
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">update</i>
-                            <span>Update</span>
+                            <span>Обновить</span>
                         </button>
 
                     </form>

@@ -43,7 +43,7 @@
                             <input type="file" name="image" id="slider-image-input-edit" style="display:none;">
                             <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="slider-image-btn-edit">
                                 <i class="material-icons">image</i>
-                                <span>UPLOAD IMAGE</span>
+                                <span>Загрузить изображения</span>
                             </button>
                         </div>
 
@@ -56,7 +56,7 @@
 
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">update</i>
-                            <span>Update</span>
+                            <span>Обновить</span>
                         </button>
 
                     </form>

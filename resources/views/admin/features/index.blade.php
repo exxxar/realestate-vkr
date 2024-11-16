@@ -14,7 +14,7 @@
     <div class="block-header">
         <a href="{{route('admin.features.create')}}" class="waves-effect waves-light btn right m-b-15 addbtn">
             <i class="material-icons left">add</i>
-            <span>CREATE </span>
+            <span>Добавить </span>
         </a>
     </div>
 

@@ -39,7 +39,7 @@
     <a href="{{ route('agent.properties.create') }}">
         <li class="collection-item {{ Request::is('agent/properties/create') ? 'active' : '' }}">
             <i class="material-icons left">create</i>
-            <span>Create Property<span>
+            <span>Добавить<span>
         </li>
     </a>
     <a href="{{ route('agent.changepassword') }}">

@@ -21,7 +21,7 @@
                         SLIDER LIST
                         <a href="{{route('admin.sliders.create')}}" class="btn waves-effect waves-light right headerightbtn">
                             <i class="material-icons left">add</i>
-                            <span>CREATE </span>
+                            <span>Добавить </span>
                         </a>
                     </h2>
                 </div>

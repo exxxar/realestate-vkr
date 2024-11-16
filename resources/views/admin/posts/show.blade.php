@@ -25,7 +25,7 @@
                     <h2>
                         {{$post->title}}
                         <br>
-                        <small>Posted By <strong>{{$post->user->name}}</strong> on {{$post->created_at->toFormattedDateString()}}</small>
+                        <small>Размещено <strong>{{$post->user->name}}</strong> в {{$post->created_at->toFormattedDateString()}}</small>
                     </h2>
                 </div>
 

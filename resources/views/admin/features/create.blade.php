@@ -21,7 +21,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>CREATE FEATURE</h2>
+                    <h2>Добавление особенностей</h2>
                 </div>
                 <div class="body">
                     <form action="{{route('admin.features.store')}}" method="POST">

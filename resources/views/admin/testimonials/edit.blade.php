@@ -44,12 +44,12 @@
                             <input type="file" name="image" id="testimonial-image-input-edit" style="display:none;">
                             <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="testimonial-image-btn-edit">
                                 <i class="material-icons">image</i>
-                                <span>UPLOAD IMAGE</span>
+                                <span>Загрузить изображения</span>
                             </button>
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Testimonial</label>
+                            <label class="form-label">Отзыв</label>
                             <div class="form-line">
                                 <textarea name="testimonial" rows="4" class="form-control no-resize">{{$testimonial->testimonial}}</textarea>
                             </div>
@@ -57,7 +57,7 @@
 
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">update</i>
-                            <span>Update</span>
+                            <span>Обновить</span>
                         </button>
 
                     </form>

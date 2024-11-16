@@ -55,7 +55,7 @@
                             <input type="file" name="image" id="profile-image-input" style="display:none;">
                             <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="profile-image-btn">
                                 <i class="material-icons">image</i>
-                                <span>UPLOAD IMAGE</span>
+                                <span>Загрузить изображения</span>
                             </button> --}}
                         </div>
 

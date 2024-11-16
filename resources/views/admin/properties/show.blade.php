@@ -25,7 +25,7 @@
                     <h2>
                         {{$property->title}}
                         <br>
-                        <small>Posted By <strong>{{$property->user->name}}</strong> on {{$property->created_at->toFormattedDateString()}}</small>
+                        <small>Размещено <strong>{{$property->user->name}}</strong> в {{$property->created_at->toFormattedDateString()}}</small>
                     </h2>
                 </div>
 

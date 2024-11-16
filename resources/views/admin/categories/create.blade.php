@@ -21,7 +21,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
-                    <h2>CREATE CATEGORIES</h2>
+                    <h2>Добавление категории</h2>
                 </div>
                 <div class="body">
                     <form action="{{route('admin.categories.store')}}" method="POST" enctype="multipart/form-data">

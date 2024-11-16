@@ -95,7 +95,7 @@
 
                     <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                         <i class="material-icons">save</i>
-                        <span>UPDATE</span>
+                        <span>Обновить</span>
                     </button>
 
                 </div>

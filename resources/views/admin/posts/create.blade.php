@@ -19,7 +19,7 @@
         <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header">
-                    <h2>CREATE POST</h2>
+                    <h2>Добавление новости</h2>
                 </div>
                 <div class="body">
 

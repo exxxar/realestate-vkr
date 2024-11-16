@@ -47,7 +47,7 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>CREATE ALBUM</h2>
+                    <h2>Добавление альбома</h2>
                 </div>
                 <div class="body">
 

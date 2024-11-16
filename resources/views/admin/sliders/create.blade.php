@@ -15,10 +15,10 @@
             <div class="card">
                 <div class="header bg-indigo">
                     <h2>
-                        CREATE SLIDER
+                       Добавление слайдера
                         <a href="{{route('admin.sliders.index')}}" class="waves-effect waves-light btn right headerightbtn">
                             <i class="material-icons left">arrow_back</i>
-                            <span>BACK</span>
+                            <span>Назад</span>
                         </a>
                     </h2>
                 </div>
@@ -45,7 +45,7 @@
                             <input type="file" name="image" id="slider-image-input" style="display:none;">
                             <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="slider-image-btn">
                                 <i class="material-icons">image</i>
-                                <span>UPLOAD IMAGE</span>
+                                <span>Загрузить изображения</span>
                             </button>
                         </div>
 

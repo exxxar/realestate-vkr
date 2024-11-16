@@ -67,23 +67,23 @@
                             </div>
                         </div>
 
-                        <h6>Social Links</h6>
+                        <h6>Соц. сети</h6>
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="facebook" class="form-control" value="{{ $settings->facebook or null }}">
-                                <label class="form-label">Обработчик фейсбук</label>
+                                <label class="form-label">Ссылка на фейсбук</label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="twitter" class="form-control" value="{{ $settings->twitter or null }}">
-                                <label class="form-label">Обработчик твиттера</label>
+                                <label class="form-label">Ссылка на твиттер</label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="linkedin" class="form-control" value="{{ $settings->linkedin or null }}">
-                                <label class="form-label">Обработчик LinkedIn</label>
+                                <label class="form-label">Ссылка на LinkedIn</label>
                             </div>
                         </div>
 

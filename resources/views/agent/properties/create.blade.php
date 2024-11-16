@@ -18,7 +18,7 @@
 
                 <div class="col s12 m9">
                     <div class="agent-content">
-                        <h4 class="agent-title">CREATE PROPERTY</h4>
+                        <h4 class="agent-title">Добавление объекта недвижимости</h4>
 
                         <form action="{{route('agent.properties.store')}}" method="POST" enctype="multipart/form-data">
                             @csrf

@@ -46,7 +46,7 @@
 
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">update</i>
-                            <span>Update</span>
+                            <span>Обновить</span>
                         </button>
 
                     </form>

@@ -21,7 +21,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>CREATE TESTIMONIAL</h2>
+                    <h2>Добавление отзыва</h2>
                 </div>
                 <div class="body">
                     <form action="{{route('admin.testimonials.store')}}" method="POST" enctype="multipart/form-data">
@@ -37,7 +37,7 @@
                         <div class="form-group">
                             <div class="form-line">
                                 <textarea name="testimonial" rows="4" class="form-control no-resize"></textarea>
-                                <label class="form-label">Testimonial</label>
+                                <label class="form-label">Отзыв</label>
                             </div>
                         </div>
 
@@ -46,7 +46,7 @@
                             <input type="file" name="image" id="testimonial-image-input" style="display:none;">
                             <button type="button" class="btn bg-grey btn-sm waves-effect m-t-15" id="testimonial-image-btn">
                                 <i class="material-icons">image</i>
-                                <span>UPLOAD IMAGE</span>
+                                <span>Загрузить изображения</span>
                             </button>
                         </div>
 
