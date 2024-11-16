@@ -12,35 +12,35 @@
 
                 <div class="col s12 m4 card">
 
-                    <h2 class="sidebar-title">search property</h2>
+                    <h2 class="sidebar-title">Поиск недвижимости</h2>
 
                     <form class="sidebar-search" action="{{ route('search')}}" method="GET">
 
                         <div class="searchbar">
                             <div class="input-field col s12">
                                 <input type="text" name="city" id="autocomplete-input-sidebar" class="autocomplete custominputbox" autocomplete="off">
-                                <label for="autocomplete-input-sidebar">Enter City or State</label>
+                                <label for="autocomplete-input-sidebar">Город \ Регион</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="type" class="browser-default">
-                                    <option value="" disabled selected>Choose Type</option>
-                                    <option value="apartment">Apartment</option>
-                                    <option value="house">House</option>
+                                    <option value="" disabled selected>Тип</option>
+                                    <option value="apartment">Апартаменты</option>
+                                    <option value="house">Дом</option>
                                 </select>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="purpose" class="browser-default">
-                                    <option value="" disabled selected>Choose Purpose</option>
-                                    <option value="rent">Rent</option>
-                                    <option value="sale">Sale</option>
+                                    <option value="" disabled selected>Предложение</option>
+                                    <option value="rent">Аренда</option>
+                                    <option value="sale">Продажа</option>
                                 </select>
                             </div>
     
                             <div class="input-field col s12">
                                 <select name="bedroom" class="browser-default">
-                                    <option value="" disabled selected>Choose Bedroom</option>
+                                    <option value="" disabled selected>Спален</option>
                                     @foreach($bedroomdistinct as $bedroom)
                                         <option value="{{$bedroom->bedroom}}">{{$bedroom->bedroom}}</option>
                                     @endforeach
@@ -49,7 +49,7 @@
 
                             <div class="input-field col s12">
                                 <select name="bathroom" class="browser-default">
-                                    <option value="" disabled selected>Choose Bathroom</option>
+                                    <option value="" disabled selected>Ванных комнат</option>
                                     @foreach($bathroomdistinct as $bathroom)
                                         <option value="{{$bathroom->bathroom}}">{{$bathroom->bathroom}}</option>
                                     @endforeach
@@ -58,22 +58,22 @@
     
                             <div class="input-field col s12">
                                 <input type="number" name="minprice" id="minprice" class="custominputbox">
-                                <label for="minprice">Min Price</label>
+                                <label for="minprice">Мин.цена</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="maxprice" id="maxprice" class="custominputbox">
-                                <label for="maxprice">Max Price</label>
+                                <label for="maxprice">Макс.цена</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="minarea" id="minarea" class="custominputbox">
-                                <label for="minarea">Floor Min Area</label>
+                                <label for="minarea">Мин.площадь</label>
                             </div>
     
                             <div class="input-field col s12">
                                 <input type="number" name="maxarea" id="maxarea" class="custominputbox">
-                                <label for="maxarea">Floor Max Area</label>
+                                <label for="maxarea">Макс.площадь</label>
                             </div>
                             
                             <div class="input-field col s12">
@@ -81,14 +81,14 @@
                                     <label>
                                         <input type="checkbox" name="featured">
                                         <span class="lever"></span>
-                                        Featured
+                                        Из лучших
                                     </label>
                                 </div>
                             </div>
                             <div class="input-field col s12">
                                 <button class="btn btnsearch indigo" type="submit">
                                     <i class="material-icons left">search</i>
-                                    <span>SEARCH</span>
+                                    <span>Подобрать</span>
                                 </button>
                             </div>
                         </div>
@@ -130,15 +130,15 @@
                                 <div class="card-action property-action clearfix">
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Bedroom: <strong>{{ $property->bedroom}}</strong> 
+                                        Спальни: <strong>{{ $property->bedroom}}</strong>
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Bathroom: <strong>{{ $property->bathroom}}</strong> 
+                                        Ванные: <strong>{{ $property->bathroom}}</strong>
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Area: <strong>{{ $property->area}}</strong> Sq Ft
+                                        Площадь: <strong>{{ $property->area}}</strong> М.
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">comment</i>

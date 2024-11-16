@@ -15,7 +15,7 @@
     
 <div class="card">
     <div class="card-content">
-        <h3 class="font-18 m-t-0 bold uppercase">Categories</h3>
+        <h3 class="font-18 m-t-0 bold uppercase">Категории</h3>
         <ul>
             @foreach($categories as $category)
                 <li class="category-bg-image" style="background-image:url({{Storage::url('category/slider/'.$category->image)}});">
@@ -34,7 +34,7 @@
 
 <div class="card">
     <div class="card-content">
-        <h3 class="font-18 m-t-0 bold uppercase">Archives</h3>
+        <h3 class="font-18 m-t-0 bold uppercase">Архив</h3>
         <ul class="collection">
             @foreach($archives as $stats)
                 <li class="collection-item">
@@ -53,7 +53,7 @@
 
 <div class="card">
     <div class="card-content">
-        <h3 class="font-18 m-t-0 bold uppercase">Tags</h3>
+        <h3 class="font-18 m-t-0 bold uppercase">Тэги</h3>
 
         @foreach($tags as $tag)
 

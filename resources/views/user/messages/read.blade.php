@@ -17,21 +17,21 @@
 
                 <div class="col s12 m9">
 
-                    <h4 class="agent-title">READ MESSAGES</h4>
+                    <h4 class="agent-title">Сообщение</h4>
                     
                     <div class="agent-content">
                         
-                        <span><strong>From:</strong> <em>{{ $message->name }} < {{ $message->email }} ></em></span> <br>
-                        <span><strong>Phone:</strong> {{ $message->phone }}</span>
+                        <span><strong>От:</strong> <em>{{ $message->name }} < {{ $message->email }} ></em></span> <br>
+                        <span><strong>Телефон:</strong> {{ $message->phone }}</span>
 
                         <div class="read-message">
-                            <span>Message:</span>
+                            <span>Текст:</span>
                             <p>{!! $message->message !!}</p>
                         </div>
 
                         <a href="{{route('user.message.replay',$message->id)}}" class="btn btn-small indigo waves-effect">
                             <i class="material-icons left">replay</i>
-                            <span>Replay</span>
+                            <span>Ответить</span>
                         </a>
 
                         <form class="right" action="{{route('user.message.readunread')}}" method="POST">
@@ -42,9 +42,9 @@
                             <button type="submit" class="btn btn-small orange waves-effect">
                                 <i class="material-icons left">local_library</i>
                                 @if($message->status)
-                                    <span>Unread</span>
+                                    <span>Не прочитано</span>
                                 @else 
-                                    <span>Read</span>
+                                    <span>Прочитано</span>
                                 @endif
                             </button>
                         </form>

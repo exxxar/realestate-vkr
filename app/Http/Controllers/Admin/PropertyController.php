@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Property;
@@ -10,9 +11,9 @@ use App\PropertyImageGallery;
 use App\Comment;
 
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
 use Carbon\Carbon;
-use Toastr;
 use Auth;
 use File;
 
@@ -47,11 +48,11 @@ class PropertyController extends Controller
             'city'      => 'required',
             'address'   => 'required',
             'area'      => 'required',
-            'image'     => 'required|image|mimes:jpeg,jpg,png',
-            'floor_plan'=> 'image|mimes:jpeg,jpg,png',
+            'image'     => '',//'required|image|mimes:jpeg,jpg,png',
+            'floor_plan'=> "",//'image|mimes:jpeg,jpg,png',
             'description'        => 'required',
-            'location_latitude'  => 'required',
-            'location_longitude' => 'required',
+            'location_latitude'  => "",//'required',
+            'location_longitude' => "",//'required',
         ]);
 
         $image = $request->file('image');
@@ -85,9 +86,9 @@ class PropertyController extends Controller
         }
 
         $property = new Property();
-        $property->title    = $request->title;
-        $property->slug     = $slug;
-        $property->price    = $request->price;
+        $property->title    = $request->title ?? 'Название дома';
+        $property->slug     = $slug ?? Str::uuid();
+        $property->price    = $request->price ?? 1000;
         $property->purpose  = $request->purpose;
         $property->type     = $request->type;
         $property->image    = $imagename;
@@ -163,7 +164,7 @@ class PropertyController extends Controller
     public function update(Request $request, $property)
     {
         $request->validate([
-            'title'     => 'required|max:255',
+            'title'     => 'required|unique:properties|max:255',
             'price'     => 'required',
             'purpose'   => 'required',
             'type'      => 'required',
@@ -172,11 +173,11 @@ class PropertyController extends Controller
             'city'      => 'required',
             'address'   => 'required',
             'area'      => 'required',
-            'image'     => 'image|mimes:jpeg,jpg,png',
-            'floor_plan'=> 'image|mimes:jpeg,jpg,png',
+            'image'     => '',//'required|image|mimes:jpeg,jpg,png',
+            'floor_plan'=> "",//'image|mimes:jpeg,jpg,png',
             'description'        => 'required',
-            'location_latitude'  => 'required',
-            'location_longitude' => 'required'
+            'location_latitude'  => "",//'required',
+            'location_longitude' => "",//'required',
         ]);
 
         $image = $request->file('image');

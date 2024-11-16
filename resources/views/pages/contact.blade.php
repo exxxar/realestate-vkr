@@ -12,7 +12,7 @@
 
                 <div class="col s12 m8">
                     <div class="contact-content">
-                        <h4 class="contact-title">Contact Us</h4>
+                        <h4 class="contact-title">Связь с нами</h4>
 
                         <form id="contact-us" action="" method="POST">
                             @csrf
@@ -26,14 +26,14 @@
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">person</i>
                                     <input id="name" name="name" type="text" class="validate" value="{{ auth()->user()->name }}" readonly>
-                                    <label for="name">Name</label>
+                                    <label for="name">Имя</label>
                                 </div>
                             @endauth
                             @guest
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">person</i>
                                     <input id="name" name="name" type="text" class="validate">
-                                    <label for="name">Name</label>
+                                    <label for="name">Имя</label>
                                 </div>
                             @endguest
 
@@ -41,31 +41,31 @@
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">mail</i>
                                     <input id="email" name="email" type="email" class="validate" value="{{ auth()->user()->email }}" readonly>
-                                    <label for="email">Email</label>
+                                    <label for="email">Почта</label>
                                 </div>
                             @endauth
                             @guest
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">mail</i>
                                     <input id="email" name="email" type="email" class="validate">
-                                    <label for="email">Email</label>
+                                    <label for="email">Почта</label>
                                 </div>
                             @endguest
 
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">phone</i>
                                 <input id="phone" name="phone" type="number" class="validate">
-                                <label for="phone">Phone</label>
+                                <label for="phone">Телефон</label>
                             </div>
 
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
                                 <textarea id="message" name="message" class="materialize-textarea"></textarea>
-                                <label for="message">Message</label>
+                                <label for="message">Текст</label>
                             </div>
                             
                             <button id="msgsubmitbtn" class="btn waves-effect waves-light indigo darken-4 btn-large" type="submit">
-                                <span>SEND</span>
+                                <span>Отправить</span>
                                 <i class="material-icons right">send</i>
                             </button>
 
@@ -78,21 +78,21 @@
                     <div class="contact-sidebar">
                         <div class="m-t-30">
                             <i class="material-icons left">call</i>
-                            <h6 class="uppercase">Call us Now</h6>
+                            <h6 class="uppercase">Позвони нам</h6>
                             @if(isset($contactsettings[0]) && $contactsettings[0]['phone'])
                                 <h6 class="bold m-l-40">{{ $contactsettings[0]['phone'] }}</h6>
                             @endif
                         </div>
                         <div class="m-t-30">
                             <i class="material-icons left">mail</i>
-                            <h6 class="uppercase">Email Address</h6>
+                            <h6 class="uppercase">Почтовый адрес</h6>
                             @if(isset($contactsettings[0]) && $contactsettings[0]['email'])
                                 <h6 class="bold m-l-40">{{ $contactsettings[0]['email'] }}</h6>
                             @endif
                         </div>
                         <div class="m-t-30">
                             <i class="material-icons left">map</i>
-                            <h6 class="uppercase">Address</h6>
+                            <h6 class="uppercase">Адрес</h6>
                             @if(isset($contactsettings[0]) && $contactsettings[0]['address'])
                                 <h6 class="bold m-l-40">{!! $contactsettings[0]['address'] !!}</h6>
                             @endif
@@ -124,7 +124,7 @@
                     data: data,
                     beforeSend: function() {
                         $(btn).addClass('disabled');
-                        $(btn).empty().append('<span>LOADING...</span><i class="material-icons right">rotate_right</i>');
+                        $(btn).empty().append('<span>Загрузка...</span><i class="material-icons right">rotate_right</i>');
                     },
                     success: function(data) {
                         if (data.message) {
@@ -137,7 +137,7 @@
                     complete: function() {
                         $('form#contact-us')[0].reset();
                         $(btn).removeClass('disabled');
-                        $(btn).empty().append('<span>SEND</span><i class="material-icons right">send</i>');
+                        $(btn).empty().append('<span>Отправить</span><i class="material-icons right">send</i>');
                     },
                     dataType: 'json'
                 });

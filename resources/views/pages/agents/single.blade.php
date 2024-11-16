@@ -27,7 +27,7 @@
                         </div>
                     </div>
 
-                    <h5 class="uppercase">Property List of {{ $agent->name }}</h5>
+                    <h5 class="uppercase">Список объектов от {{ $agent->name }}</h5>
 
                     {{-- AGENT PROPERTIES --}}
                     @foreach($properties as $property)
@@ -50,15 +50,15 @@
                                 <div class="card-action property-action">
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Beds: <strong>{{ $property->bedroom}}</strong> 
+                                        Спален: <strong>{{ $property->bedroom}}</strong>
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Baths: <strong>{{ $property->bathroom}}</strong> 
+                                        Ванных: <strong>{{ $property->bathroom}}</strong>
                                     </span>
                                     <span class="btn-flat">
                                         <i class="material-icons">check_box</i>
-                                        Area: <strong>{{ $property->area}}</strong> Sq Ft
+                                        Площадь: <strong>{{ $property->area}}</strong> М.2
                                     </span>
                                     
                                     @if($property->featured == 1)
@@ -84,7 +84,7 @@
                         <div>
                             <ul class="collection with-header m-t-0">
                                 <li class="collection-header grey lighten-4">
-                                    <h5 class="m-0">Contact with Agent</h5>
+                                    <h5 class="m-0">Связаться с агентом</h5>
                                 </li>
                                 <li class="collection agent-message">
                                     <form class="agent-message-box" action="" method="POST">
@@ -93,20 +93,20 @@
                                         <input type="hidden" name="user_id" value="{{ auth()->id() }}">
                                             
                                         <div class="box">
-                                            <input type="text" name="name" placeholder="Your Name">
+                                            <input type="text" name="name" placeholder="Ваше имя">
                                         </div>
                                         <div class="box">
-                                            <input type="email" name="email" placeholder="Your Email">
+                                            <input type="email" name="email" placeholder="Ваш Email">
                                         </div>
                                         <div class="box">
-                                            <input type="number" name="phone" placeholder="Your Phone">
+                                            <input type="number" name="phone" placeholder="Ваш номер телефона">
                                         </div>
                                         <div class="box">
-                                            <textarea name="message" placeholder="Your Msssage"></textarea>
+                                            <textarea name="message" placeholder="Ваше сообщение"></textarea>
                                         </div>
                                         <div class="box">
                                             <button id="msgsubmitbtn" class="btn waves-effect waves-light w100 indigo" type="submit">
-                                                SEND
+                                                Отправить
                                                 <i class="material-icons left">send</i>
                                             </button>
                                         </div>
@@ -140,7 +140,7 @@
                     data: data,
                     beforeSend: function() {
                         $(btn).addClass('disabled');
-                        $(btn).empty().append('LOADING...<i class="material-icons left">rotate_right</i>');
+                        $(btn).empty().append('Загрузка...<i class="material-icons left">rotate_right</i>');
                     },
                     success: function(data) {
                         if (data.message) {
@@ -153,7 +153,7 @@
                     complete: function() {
                         $('form.agent-message-box')[0].reset();
                         $(btn).removeClass('disabled');
-                        $(btn).empty().append('SEND<i class="material-icons left">send</i>');
+                        $(btn).empty().append('Отправить<i class="material-icons left">send</i>');
                     },
                     dataType: 'json'
                 });
