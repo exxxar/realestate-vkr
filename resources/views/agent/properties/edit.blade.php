@@ -18,7 +18,7 @@
 
                 <div class="col s12 m9">
                     <div class="agent-content">
-                        <h4 class="agent-title">EDIT PROPERTY</h4>
+                        <h4 class="agent-title">Редактировать</h4>
 
                         <form action="{{route('agent.properties.update',$property->slug)}}" method="POST" enctype="multipart/form-data">
                             @csrf

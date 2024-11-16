@@ -13,7 +13,7 @@
     <a href="{{ route('agent.dashboard') }}">
         <li class="collection-item {{ Request::is('agent/dashboard') ? 'active' : '' }}">
             <i class="material-icons left">dashboard</i>
-            <span>Dashboard<span>
+            <span>Панель управления<span>
         </li>
     </a>
 
@@ -33,7 +33,7 @@
     <a href="{{ route('agent.properties.index') }}">
         <li class="collection-item {{ Request::is('agent/properties') ? 'active' : '' }}">
             <i class="material-icons left">view_list</i>
-            <span>Properties<span>
+            <span>Объекты недвижимости<span>
         </li>
     </a>
     <a href="{{ route('agent.properties.create') }}">

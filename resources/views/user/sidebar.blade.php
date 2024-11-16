@@ -13,7 +13,7 @@
         <a href="{{ route('user.dashboard') }}">
             <li class="collection-item {{ Request::is('user/dashboard') ? 'active' : '' }}">
                 <i class="material-icons left">dashboard</i>
-                <span>Dashboard<span>
+                <span>Панель управления<span>
             </li>
         </a>
     

@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', 'Properties')
+@section('title', 'Объекты недвижимости')
 
 @push('styles')
 

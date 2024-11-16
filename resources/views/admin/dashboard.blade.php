@@ -1,6 +1,6 @@
 @extends('backend.layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Панель управления')
 
 @push('styles')
 
