@@ -38,7 +38,7 @@
             {{-- COMMENTS --}}
             <div class="card">
                 <div class="header">
-                    <h2>{{ $post->comments_count }} Comments</h2>
+                    <h2>{{ $post->comments_count }} Комментариев</h2>
                 </div>
                 <div class="body">
                     @foreach($post->comments as $comment)

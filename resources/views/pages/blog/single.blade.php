@@ -54,7 +54,7 @@
 
                     <div class="card" id="comments">
                         <div class="p-15 grey lighten-4">
-                            <h5 class="m-0">{{ $post->comments_count }} Comments</h5>
+                            <h5 class="m-0">{{ $post->comments_count }} Комментариев</h5>
                         </div>
                         <div class="single-narebay p-15">
 

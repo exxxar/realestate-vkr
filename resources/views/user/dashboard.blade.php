@@ -25,7 +25,7 @@
                             <div class="col s12">
                                 <div class="box indigo white-text p-30">
                                     <i class="material-icons left">comment</i>
-                                    <span class="truncate uppercase bold font-18">Comments</span>
+                                    <span class="truncate uppercase bold font-18">Комментарии</span>
                                     <h4 class="m-t-10 m-b-0">{{ $commentcount }}</h4>
                                 </div>
                             </div>
