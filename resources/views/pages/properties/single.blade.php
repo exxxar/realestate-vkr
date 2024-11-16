@@ -176,7 +176,7 @@
                                                 <span class="time">{{ $comment->created_at->diffForHumans() }}</span>
 
                                                 @auth
-                                                    <span id="commentreplay" class="right replay" data-commentid="{{ $comment->id }}">Replay</span>
+                                                    <span id="commentreplay" class="right replay" data-commentid="{{ $comment->id }}">Ответить</span>
                                                 @endauth
 
                                             </div>

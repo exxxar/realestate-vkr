@@ -66,7 +66,7 @@
                                 </div>
 
                                 <h5>
-                                    &dollar;{{ $property->price }}
+                                    {{ $property->price }} руб.
                                     <div class="right" id="propertyrating-{{$property->id}}"></div>
                                 </h5>                                
                             </div>
