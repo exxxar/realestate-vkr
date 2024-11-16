@@ -20,7 +20,7 @@
     <a href="{{ route('agent.profile') }}">
         <li class="collection-item {{ Request::is('agent/profile') ? 'active' : '' }}">
             <i class="material-icons left">person</i>
-            <span>Profile</span>
+            <span>Профиль</span>
         </li>
     </a>
     <a href="{{ route('agent.message') }}">
@@ -45,7 +45,7 @@
     <a href="{{ route('agent.changepassword') }}">
         <li class="collection-item {{ Request::is('agent/changepassword') ? 'active' : '' }}">
             <i class="material-icons left">lock</i>
-            <span>Change Password</span>
+            <span>Сменить пароль</span>
         </li>
     </a>
 </ul>

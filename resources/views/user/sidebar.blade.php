@@ -20,7 +20,7 @@
         <a href="{{ route('user.profile') }}">
             <li class="collection-item {{ Request::is('user/profile') ? 'active' : '' }}">
                 <i class="material-icons left">person</i>
-                <span>Profile</span>
+                <span>Профиль</span>
             </li>
         </a>
         <a href="{{ route('user.message') }}">
@@ -32,7 +32,7 @@
         <a href="{{ route('user.changepassword') }}">
             <li class="collection-item {{ Request::is('user/changepassword') ? 'active' : '' }}">
                 <i class="material-icons left">lock</i>
-                <span>Change Password</span>
+                <span>Сменить пароль</span>
             </li>
         </a>
     

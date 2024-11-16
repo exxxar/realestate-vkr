@@ -18,7 +18,7 @@
 
                 <div class="col s12 m9">
                     <div class="agent-content">
-                        <h4 class="agent-title">Change Password</h4>
+                        <h4 class="agent-title">Сменить пароль</h4>
 
                         <form action="{{route('user.changepassword.update')}}" method="POST" enctype="multipart/form-data">
                             @csrf
