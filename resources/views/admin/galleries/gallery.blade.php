@@ -19,7 +19,7 @@
             <div class="card">
                 <div class="header bg-indigo">
                     <h2>
-                        GALLERY IMAGE
+                        Галерея изображений
                         <a href="{{ route('admin.album') }}" class="right" title="Back"><i class="material-icons">undo</i></a>
                     </h2>
                 </div>
@@ -40,7 +40,7 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>UPLOAD GALLERY IMAGE</h2>
+                    <h2>Загрузка изображений в галерею</h2>
                 </div>
                 <div class="body">
                     <form action="{{route('admin.galleries.store')}}" method="POST" id="frmFileUpload" class="dropzone">
@@ -49,8 +49,7 @@
                             <div class="drag-icon-cph">
                                 <i class="material-icons">touch_app</i>
                             </div>
-                            <h3>Drop files here or click to upload.</h3>
-                            <em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em>
+                            <h3>Перетащите файлы для загрузки</h3>
                         </div>
                         <div class="fallback">
                             <input name="file" type="file" multiple />

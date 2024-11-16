@@ -96,7 +96,7 @@
             @if(!$property->gallery->isEmpty())
             <div class="card">
                 <div class="header bg-red">
-                    <h2>GALLERY IMAGE</h2>
+                    <h2>Галерея изображений</h2>
                 </div>
                 <div class="body">
                     <div class="gallery-box">

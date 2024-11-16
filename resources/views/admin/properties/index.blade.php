@@ -22,24 +22,24 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>PROPERTY LIST</h2>
+                    <h2>Объекты недвижимости</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
-                                    <th>Type</th>
-                                    <th>Purpose</th>
-                                    <th>Beds</th>
-                                    <th>Baths</th>
+                                    <th>№</th>
+                                    <th>Изображение</th>
+                                    <th>Название</th>
+                                    <th>Автор</th>
+                                    <th>Тип</th>
+                                    <th>Предложение</th>
+                                    <th>Кровати</th>
+                                    <th>Ванные</th>
                                     <th><i class="material-icons small">comment</i></th>
                                     <th><i class="material-icons small">stars</i></th>
-                                    <th width="150">Action</th>
+                                    <th width="150">Действия</th>
                                 </tr>
                             </thead>
 

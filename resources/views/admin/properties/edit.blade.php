@@ -97,7 +97,7 @@
 
             <div class="card">
                 <div class="header bg-red">
-                    <h2>GALLERY IMAGE</h2>
+                    <h2>Галерея изображений</h2>
                 </div>
                 <div class="body">
                     <div class="gallery-box" id="gallerybox">
@@ -111,7 +111,7 @@
                     <div class="gallery-box">
                         <hr>
                         <input type="file" name="gallaryimage[]" value="UPLOAD" id="gallaryimageupload" multiple>
-                        <button type="button" class="btn btn-info btn-lg right" id="galleryuploadbutton">UPLOAD GALLERY IMAGE</button>
+                        <button type="button" class="btn btn-info btn-lg right" id="galleryuploadbutton">Загрузить</button>
                     </div>
                 </div>
             </div>
@@ -120,33 +120,33 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>SELECT</h2>
+                    <h2>Выбор</h2>
                 </div>
                 <div class="body">
 
                     <div class="form-group form-float">
                         <div class="form-line {{$errors->has('purpose') ? 'focused error' : ''}}">
-                            <label>Select Purpose</label>
+                            <label>Выбор предложения</label>
                             <select name="purpose" class="form-control show-tick">
-                                <option value="">-- Please select --</option>
-                                <option value="sale" {{ $property->purpose=='sale' ? 'selected' : '' }}>Sale</option>
-                                <option value="rent" {{ $property->purpose=='rent' ? 'selected' : '' }}>Rent</option>
+                                <option value="">-- Выберите тип --</option>
+                                <option value="sale" {{ $property->purpose=='sale' ? 'selected' : '' }}>Продажа</option>
+                                <option value="rent" {{ $property->purpose=='rent' ? 'selected' : '' }}>Аренда</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="form-group form-float">
                         <div class="form-line {{$errors->has('type') ? 'focused error' : ''}}">
-                            <label>Select type</label>
+                            <label>Выберите тип</label>
                             <select name="type" class="form-control show-tick">
-                                <option value="">-- Please select --</option>
-                                <option value="house" {{ $property->type=='house' ? 'selected' : '' }}>House</option>
-                                <option value="apartment" {{ $property->type=='apartment' ? 'selected' : '' }}>Apartment</option>
+                                <option value="">-- Выберите параметр --</option>
+                                <option value="house" {{ $property->type=='house' ? 'selected' : '' }}>Дом</option>
+                                <option value="apartment" {{ $property->type=='apartment' ? 'selected' : '' }}>Апартаменты</option>
                             </select>
                         </div>
                     </div>
 
-                    <h5>Features</h5>
+                    <h5>Особенности</h5>
                     <div class="form-group demo-checkbox">
                         @foreach($features as $feature)
                             <input type="checkbox" id="features-{{$feature->id}}" name="features[]" class="filled-in chk-col-indigo" value="{{$feature->id}}" 
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="clearfix">
-                        <h5>Google Map</h5>
+                        <h5>Google Map координаты</h5>
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="location_latitude" class="form-control" value="{{$property->location_latitude}}" required/>
@@ -179,15 +179,15 @@
 
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>PROPERTY VIDEO</h2>
+                    <h2>Видео</h2>
                 </div>
                 <div class="body">
                     <div class="form-group form-float">
                         <div class="form-line">
                             <input type="text" class="form-control" name="video" value="{{$property->video}}">
-                            <label class="form-label">Video</label>
+                            <label class="form-label">Видео</label>
                         </div>
-                        <div class="help-info">Youtube Link</div>
+                        <div class="help-info">Youtube ссылка</div>
                     </div>
                     <div class="embed-video center">
                         {!! $videoembed !!}
@@ -197,7 +197,7 @@
 
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>FLOOR PLAN</h2>
+                    <h2>План этажа</h2>
                 </div>
                 <div class="body">
                     <div class="form-group">
@@ -211,7 +211,7 @@
 
             <div class="card">
                 <div class="header bg-indigo">
-                    <h2>FEATURED IMAGE</h2>
+                    <h2>Изображение</h2>
                 </div>
                 <div class="body">
 
@@ -225,12 +225,12 @@
                     {{-- BUTTON --}}
                     <a href="{{route('admin.properties.index')}}" class="btn btn-danger btn-lg m-t-15 waves-effect">
                         <i class="material-icons left">arrow_back</i>
-                        <span>BACK</span>
+                        <span>Назад</span>
                     </a>
 
                     <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                         <i class="material-icons">save</i>
-                        <span>SAVE</span>
+                        <span>Сохранить</span>
                     </button>
 
                 </div>

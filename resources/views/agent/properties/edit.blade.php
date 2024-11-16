@@ -206,7 +206,7 @@
                             <div class="row">
                                 <div class="file-field input-field col s12">
                                     <div class="btn indigo">
-                                        <span>Upload Gallery Images</span>
+                                        <span>Загрузка изображений в галерею</span>
                                         <input type="file" name="gallaryimage[]" multiple>
                                         <span class="helper-text" data-error="wrong" data-success="right">Upload one or more images</span>
                                     </div>
