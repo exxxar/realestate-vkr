@@ -21,7 +21,7 @@
                     <i class="material-icons">playlist_add_check</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL PROPERTY</div>
+                    <div class="text">Всего вариантов недвижимости</div>
                     <div class="number count-to" data-from="0" data-to="{{ $propertycount }}" data-speed="15" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <i class="material-icons">help</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL POST</div>
+                    <div class="text">Всего новостей</div>
                     <div class="number count-to" data-from="0" data-to="{{ $postcount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <i class="material-icons">forum</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL COMMENT</div>
+                    <div class="text">Всего комментариев</div>
                     <div class="number count-to" data-from="0" data-to="{{ $commentcount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <i class="material-icons">person_add</i>
                 </div>
                 <div class="content">
-                    <div class="text">TOTAL USER</div>
+                    <div class="text">Всего пользователей</div>
                     <div class="number count-to" data-from="0" data-to="{{ $usercount }}" data-speed="1000" data-fresh-interval="20"></div>
                 </div>
             </div>
@@ -67,19 +67,19 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT PROPERTIES</h2>
+                    <h2>Недавние варианты недвижимости</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-hover dashboard-task-infos">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Title</th>
-                                    <th>Price</th>
-                                    <th>City</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Цена</th>
+                                    <th>Город</th>
                                     <th><i class="material-icons small">star</i></th>
-                                    <th>Manager</th>
+                                    <th>Менеджер</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -113,17 +113,17 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT POSTS</h2>
+                    <h2>Недавние новости</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-hover dashboard-task-infos">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Title</th>
+                                    <th>№</th>
+                                    <th>Название</th>
                                     <th><i class="material-icons small">comment</i></th>
-                                    <th>Author</th>
+                                    <th>Автор</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -155,17 +155,17 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>USER LIST</h2>
+                    <h2>Список пользователей</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-hover dashboard-task-infos">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Role</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Почта</th>
+                                    <th>Роль</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -189,18 +189,18 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="card">
                 <div class="header">
-                    <h2>RECENT COMMENTS</h2>
+                    <h2>Недавние комменты</h2>
                 </div>
                 <div class="body">
                     <div class="table-responsive">
                         <table class="table table-hover dashboard-task-infos">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Comment</th>
+                                    <th>№</th>
+                                    <th>Комментарий</th>
                                     <th><i class="material-icons small">check</i></th>
-                                    <th>Author</th>
-                                    <th>Time</th>
+                                    <th>Автор</th>
+                                    <th>Время</th>
                                 </tr>
                             </thead>
                             <tbody>

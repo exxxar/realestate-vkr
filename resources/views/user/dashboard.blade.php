@@ -35,7 +35,7 @@
                             <div class="col s12">
                                 <div class="box indigo white-text p-20">
                                     <i class="material-icons left font-18">comment</i>
-                                    <span class="truncate uppercase bold">Recent Comments</span>
+                                    <span class="truncate uppercase bold">Недавние комменатрии</span>
                                 </div>
                                 <div class="box-content">
                                     @foreach($comments as $key => $comment)

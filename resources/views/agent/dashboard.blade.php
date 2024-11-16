@@ -42,7 +42,7 @@
                             <div class="col s6">
                                 <div class="box indigo white-text p-20">
                                     <i class="material-icons left font-18">location_city</i>
-                                    <span class="truncate uppercase bold">Recent Properties</span>
+                                    <span class="truncate uppercase bold">Недавние объекты недвижимости</span>
                                 </div>
                                 <div class="box-content">
                                     @foreach($properties as $key => $property)

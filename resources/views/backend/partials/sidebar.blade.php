@@ -4,7 +4,7 @@
         <div class="menu">
             <ul class="list">
 
-                <li class="header">MAIN NAVIGATION</li>
+                <li class="header">Основная навигация</li>
                 
                 <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
                     <a href="{{ route('admin.dashboard') }}">

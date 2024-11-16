@@ -10,7 +10,7 @@
                 @endif
             </div>
             <div class="col m6 s12">
-                <h5 class="white-text uppercase">Recent Properties</h5>
+                <h5 class="white-text uppercase">Недавние объекты недвижимости</h5>
                 <ul class="collection border0">
 
                     @foreach($footerproperties as $property)

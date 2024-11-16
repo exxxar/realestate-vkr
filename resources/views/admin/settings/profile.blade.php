@@ -17,10 +17,10 @@
             <div class="card">
                 <div class="header bg-indigo">
                     <h2>
-                        PROFILE
+                        Профиль
                         <a href="{{route('admin.changepassword')}}" class="btn waves-effect waves-light right headerightbtn">
                             <i class="material-icons left">lock</i>
-                            <span>CHANGE PASSWORD </span>
+                            <span>Смена пароля </span>
                         </a>
                     </h2>
                 </div>
@@ -31,21 +31,21 @@
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="name" class="form-control" value="{{ $profile->name or null }}">
-                                <label class="form-label">Name</label>
+                                <label class="form-label">Имя</label>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" name="username" class="form-control" value="{{ $profile->username or null }}">
-                                <label class="form-label">User Name</label>
+                                <label class="form-label">Название аккаунта</label>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="email" name="email" class="form-control" value="{{ $profile->email or null }}">
-                                <label class="form-label">Email</label>
+                                <label class="form-label">Почта</label>
                             </div>
                         </div>
 
@@ -62,13 +62,13 @@
                         <div class="form-group">
                             <div class="form-line">
                                 <textarea name="about" rows="4" class="form-control no-resize">{{ $profile->about or null }}</textarea>
-                                <label class="form-label">About Us</label>
+                                <label class="form-label">Дополнительная информация</label>
                             </div>
                         </div>
 
                         <button type="submit" class="btn btn-indigo btn-lg m-t-15 waves-effect">
                             <i class="material-icons">save</i>
-                            <span>SAVE</span>
+                            <span>Сохранить</span>
                         </button>
 
                     </form>
