@@ -7,7 +7,7 @@
                     @if(isset($navbarsettings[0]) && $navbarsettings[0]['name'])
                         {{ $navbarsettings[0]['name'] }}
                     @else
-                        Real State
+                        АН "Донбасс"
                     @endif
                     <i class="material-icons left">location_city</i>
                 </a>
@@ -17,27 +17,27 @@
                 
                 <ul class="right hide-on-med-and-down">
                     <li class="{{ Request::is('/') ? 'active' : '' }}">
-                        <a href="{{ route('home') }}">Home</a>
+                        <a href="{{ route('home') }}">Домашняя</a>
                     </li>
 
                     <li class="{{ Request::is('property*') ? 'active' : '' }}">
-                        <a href="{{ route('property') }}">Properties</a>
+                        <a href="{{ route('property') }}">Недвижимость</a>
                     </li>
 
                     <li class="{{ Request::is('agents*') ? 'active' : '' }}">
-                        <a href="{{ route('agents') }}">Agents</a>
+                        <a href="{{ route('agents') }}">Агенты</a>
                     </li>
 
                     <li class="{{ Request::is('gallery') ? 'active' : '' }}">
-                        <a href="{{ route('gallery') }}">Gallery</a>
+                        <a href="{{ route('gallery') }}">Галерея</a>
                     </li>
 
                     <li class="{{ Request::is('blog*') ? 'active' : '' }}">
-                        <a href="{{ route('blog') }}">Blog</a>
+                        <a href="{{ route('blog') }}">Новости</a>
                     </li>
 
                     <li class="{{ Request::is('contact') ? 'active' : '' }}">
-                        <a href="{{ route('contact') }}">Contact</a>
+                        <a href="{{ route('contact') }}">Наши контакты</a>
                     </li>
 
                     @guest
@@ -55,15 +55,15 @@
                             <li>
                                 @if(Auth::user()->role->id == 1)
                                     <a href="{{ route('admin.dashboard') }}" class="indigo-text">
-                                        <i class="material-icons">person</i>Profile
+                                        <i class="material-icons">person</i>Профиль
                                     </a>
                                 @elseif(Auth::user()->role->id == 2)
                                     <a href="{{ route('agent.dashboard') }}" class="indigo-text">
-                                        <i class="material-icons">person</i>Profile
+                                        <i class="material-icons">person</i>Профиль
                                     </a>
                                 @elseif(Auth::user()->role->id == 3)
                                     <a href="{{ route('user.dashboard') }}" class="indigo-text">
-                                        <i class="material-icons">person</i>Profile
+                                        <i class="material-icons">person</i>Профиль
                                     </a>
                                 @endif
                             </li>
@@ -88,27 +88,27 @@
     
     <ul class="sidenav" id="mobile-demo">
         <li class="{{ Request::is('/') ? 'active' : '' }}">
-            <a href="{{ route('home') }}">Home</a>
+            <a href="{{ route('home') }}">Домашняя</a>
         </li>
 
         <li class="{{ Request::is('property*') ? 'active' : '' }}">
-            <a href="{{ route('property') }}">Properties</a>
+            <a href="{{ route('property') }}">Подбор недвижимости</a>
         </li>
 
         <li class="{{ Request::is('agents*') ? 'active' : '' }}">
-            <a href="{{ route('agents') }}">Agents</a>
+            <a href="{{ route('agents') }}">Агенты</a>
         </li>
 
         <li class="{{ Request::is('gallery') ? 'active' : '' }}">
-            <a href="{{ route('gallery') }}">Gallery</a>
+            <a href="{{ route('gallery') }}">Галерея</a>
         </li>
 
         <li class="{{ Request::is('blog*') ? 'active' : '' }}">
-            <a href="{{ route('blog') }}">Blog</a>
+            <a href="{{ route('blog') }}">Новости</a>
         </li>
 
         <li class="{{ Request::is('contact') ? 'active' : '' }}">
-            <a href="{{ route('contact') }}">Contact</a>
+            <a href="{{ route('contact') }}">Наши контакты</a>
         </li>
     </ul>
 

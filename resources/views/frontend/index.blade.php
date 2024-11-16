@@ -7,12 +7,13 @@
     <section class="section grey lighten-4 center">
         <div class="container">
             <div class="row">
-                <h4 class="section-heading">Services</h4>
+                <h4 class="section-heading">Сервисы</h4>
             </div>
             <div class="row">
                 @foreach($services as $service)
+
                     <div class="col s12 m4">
-                        <div class="card-panel">
+                        <div class="card-panel" style="height: 400px;overflow-y: auto;">
                             <i class="material-icons large indigo-text">{{ $service->icon }}</i>
                             <h5>{{ $service->title }}</h5>
                             <p>{{ $service->description }}</p>
@@ -29,7 +30,7 @@
     <section class="section">
         <div class="container">
             <div class="row">
-                <h4 class="section-heading">Featured Properties</h4>
+                <h4 class="section-heading">Лучшие варианты</h4>
             </div>
             <div class="row">
 
@@ -101,7 +102,7 @@
     <section class="section grey lighten-3 center">
         <div class="container">
 
-            <h4 class="section-heading">Testimonials</h4>
+            <h4 class="section-heading">Отзывы</h4>
 
             <div class="carousel testimonials">
 
@@ -133,7 +134,7 @@
 
     <section class="section center">
         <div class="row">
-            <h4 class="section-heading">Recent Blog</h4>
+            <h4 class="section-heading">Последние новости</h4>
         </div>
         <div class="container">
             <div class="row">

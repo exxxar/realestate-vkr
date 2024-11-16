@@ -11,28 +11,28 @@
                     <div class="searchbar">
                         <div class="input-field col s12 m3">
                             <input type="text" name="city" id="autocomplete-input" class="autocomplete custominputbox" autocomplete="off">
-                            <label for="autocomplete-input">Enter City or State</label>
+                            <label for="autocomplete-input">Введите название города или региона</label>
                         </div>
 
                         <div class="input-field col s12 m2">
                             <select name="type" class="browser-default">
-                                <option value="" disabled selected>Choose Type</option>
-                                <option value="apartment">Apartment</option>
-                                <option value="house">House</option>
+                                <option value="" disabled selected>Выберите тип</option>
+                                <option value="apartment">Апартаменты</option>
+                                <option value="house">Дома</option>
                             </select>
                         </div>
 
                         <div class="input-field col s12 m2">
                             <select name="purpose" class="browser-default">
-                                <option value="" disabled selected>Purpose</option>
-                                <option value="rent">Rent</option>
-                                <option value="sale">Sale</option>
+                                <option value="" disabled selected>Предложение</option>
+                                <option value="rent">Аренда</option>
+                                <option value="sale">Продажа</option>
                             </select>
                         </div>
 
                         <div class="input-field col s12 m2">
                             <select name="bedroom" class="browser-default">
-                                <option value="" disabled selected>Bedroom</option>
+                                <option value="" disabled selected>Спальни</option>
                                 @if(isset($bedroomdistinct))
                                     @foreach($bedroomdistinct as $bedroom)
                                         <option value="{{$bedroom->bedroom}}">{{$bedroom->bedroom}}</option>
@@ -43,7 +43,7 @@
 
                         <div class="input-field col s12 m2">
                             <input type="text" name="maxprice" id="maxprice" class="custominputbox">
-                            <label for="maxprice">Max Price</label>
+                            <label for="maxprice">Максимальная цена</label>
                         </div>
                         
                         <div class="input-field col s12 m1">
