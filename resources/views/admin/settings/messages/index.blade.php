@@ -24,12 +24,12 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Message</th>
-                                    <th width="150px">Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Почта</th>
+                                    <th>Телефон</th>
+                                    <th>Сообщение</th>
+                                    <th width="150px">Действие</th>
                                 </tr>
                             </thead>
 

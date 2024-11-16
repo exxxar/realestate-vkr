@@ -29,16 +29,16 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
-                                    <th>Category</th>
+                                    <th>№</th>
+                                    <th>Изображение</th>
+                                    <th>Название</th>
+                                    <th>Автор</th>
+                                    <th>Категория</th>
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>Is Approved</th>
-                                    <th>Status</th>
+                                    <th>Подтверждено</th>
+                                    <th>Статус</th>
                                     <th><i class="material-icons small">comment</i></th>
-                                    <th width="150">Action</th>
+                                    <th width="150">Действие</th>
                                 </tr>
                             </thead>
 

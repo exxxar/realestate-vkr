@@ -29,18 +29,18 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Name</th>
-                                    <th>Slug</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Метка</th>
+                                    <th>Действие</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Name</th>
-                                    <th>Slug</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Метка</th>
+                                    <th>Действие</th>
                                 </tr>
                             </tfoot>
                             <tbody>

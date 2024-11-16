@@ -21,7 +21,7 @@
                     <i class="material-icons">playlist_add_check</i>
                 </div>
                 <div class="content">
-                    <div class="text">Всего вариантов недвижимости</div>
+                    <div class="text">Всего недвижимости</div>
                     <div class="number count-to" data-from="0" data-to="{{ $propertycount }}" data-speed="15" data-fresh-interval="20"></div>
                 </div>
             </div>

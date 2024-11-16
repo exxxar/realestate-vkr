@@ -23,11 +23,11 @@
                         <table class="striped responsive-table">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Message</th>
-                                    <th>Action</th>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Почта</th>
+                                    <th>Сообщение</th>
+                                    <th>Действие</th>
                                 </tr>
                             </thead>
                     

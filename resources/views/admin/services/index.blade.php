@@ -29,12 +29,12 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th>Icon</th>
-                                    <th>Order</th>
-                                    <th width="100px">Action</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Описание</th>
+                                    <th>Иконка</th>
+                                    <th>Позиция</th>
+                                    <th width="100px">Действие</th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -26,7 +26,7 @@
     <a href="{{ route('agent.message') }}">
         <li class="collection-item {{ Request::is('agent/message*') ? 'active' : '' }}">
             <i class="material-icons left">mail</i>
-            <span>Messages</span>
+            <span>Сообщения</span>
         </li>
     </a>
 

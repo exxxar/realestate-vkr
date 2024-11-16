@@ -23,13 +23,13 @@
                         <table class="striped responsive-table">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Title</th>
-                                    <th>Type</th>
-                                    <th>City</th>
+                                    <th>№</th>
+                                    <th>Название</th>
+                                    <th>Тип</th>
+                                    <th>Город</th>
                                     <th><i class="material-icons small-star p-t-10">comment</i></th>
                                     <th><i class="material-icons small-star p-t-10">stars</i></th>
-                                    <th>Action</th>
+                                    <th>Действие</th>
                                 </tr>
                             </thead>
                     

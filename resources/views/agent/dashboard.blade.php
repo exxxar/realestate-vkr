@@ -32,7 +32,7 @@
                             <div class="col s6">
                                 <div class="box indigo white-text p-30">
                                     <i class="material-icons left">mail</i>
-                                    <span class="truncate uppercase bold font-18">Messages</span>
+                                    <span class="truncate uppercase bold font-18">Сообщения</span>
                                     <h4 class="m-t-10 m-b-0">{{ $messagetotal }}</h4>
                                 </div>
                             </div>

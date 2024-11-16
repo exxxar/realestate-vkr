@@ -17,7 +17,7 @@
 
                 <div class="col s12 m9">
 
-                    <h4 class="agent-title">READ MESSAGES</h4>
+                    <h4 class="agent-title">Прочитанные сообщения</h4>
                     
                     <div class="agent-content">
                         

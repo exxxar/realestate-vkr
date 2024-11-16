@@ -17,7 +17,7 @@
 
                 <div class="col s12 m9">
 
-                    <h4 class="agent-title">REPLAY MESSAGES</h4>
+                    <h4 class="agent-title">Отвеченные сообщения</h4>
                     
                     <div class="agent-content">
                         @if($message->user_id)

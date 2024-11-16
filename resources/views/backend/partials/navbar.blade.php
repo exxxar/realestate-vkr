@@ -21,7 +21,7 @@
                             <span class="label-count">{{ $countmessages }}</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">MESSAGES</li>
+                            <li class="header">Сообщения</li>
                             <li class="body">
                                 <ul class="menu">
                                     @foreach($navbarmessages as $message)

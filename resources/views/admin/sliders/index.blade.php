@@ -18,7 +18,7 @@
             <div class="card">
                 <div class="header bg-indigo">
                     <h2>
-                        SLIDER LIST
+                        Список слайдов
                         <a href="{{route('admin.sliders.create')}}" class="btn waves-effect waves-light right headerightbtn">
                             <i class="material-icons left">add</i>
                             <span>Добавить </span>
@@ -30,11 +30,11 @@
                         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                             <thead>
                                 <tr>
-                                    <th>SL.</th>
-                                    <th>Image</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th width="100px">Action</th>
+                                    <th>№</th>
+                                    <th>Изображение</th>
+                                    <th>Название</th>
+                                    <th>Описание</th>
+                                    <th width="100px">Действие</th>
                                 </tr>
                             </thead>
                             <tbody>

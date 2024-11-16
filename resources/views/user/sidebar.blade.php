@@ -26,7 +26,7 @@
         <a href="{{ route('user.message') }}">
             <li class="collection-item {{ Request::is('user/message*') ? 'active' : '' }}">
                 <i class="material-icons left">mail</i>
-                <span>Messages</span>
+                <span>Сообщения</span>
             </li>
         </a>
         <a href="{{ route('user.changepassword') }}">
